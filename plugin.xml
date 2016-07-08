@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-insomnia"
-        version="4.2.0">
+        id="nl.x-services.plugins.insomnia"
+        version="4.0.0">
 
   <name>Insomnia (prevent screen sleep)</name>
 
@@ -55,19 +55,5 @@
 
     <source-file src="src/android/nl/xservices/plugins/Insomnia.java" target-dir="src/nl/xservices/plugins"/>
   </platform>
-
-  <!-- firefoxos -->
-  <platform name="firefoxos">
-    <js-module src="src/firefoxos/insomnia.js" name="InsomniaProxy">
-      <runs />
-    </js-module>
-  </platform>
-  
-  <!-- windows -->
-  <platform name="windows">
-    <js-module src="src/windows/InsomniaProxy.js" name="InsomniaProxy">
-      <merges target="" />
-    </js-module>
-  </platform>  
 
 </plugin>
